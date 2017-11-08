@@ -1,0 +1,360 @@
+-- MySQL dump 10.13  Distrib 5.7.20, for Win64 (x86_64)
+--
+-- Host: localhost    Database: dbdeliciagelada
+-- ------------------------------------------------------
+-- Server version	5.7.20-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tbl_cidade`
+--
+
+DROP TABLE IF EXISTS `tbl_cidade`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_cidade` (
+  `idCidade` int(11) NOT NULL AUTO_INCREMENT,
+  `cidade` varchar(60) NOT NULL,
+  PRIMARY KEY (`idCidade`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_cidade`
+--
+
+LOCK TABLES `tbl_cidade` WRITE;
+/*!40000 ALTER TABLE `tbl_cidade` DISABLE KEYS */;
+INSERT INTO `tbl_cidade` VALUES (2,'São Paulo'),(3,'Rio de Paraisópolis');
+/*!40000 ALTER TABLE `tbl_cidade` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_estado`
+--
+
+DROP TABLE IF EXISTS `tbl_estado`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_estado` (
+  `idEstado` int(11) NOT NULL AUTO_INCREMENT,
+  `sigla` varchar(2) NOT NULL,
+  `descricao` varchar(30) NOT NULL,
+  PRIMARY KEY (`idEstado`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_estado`
+--
+
+LOCK TABLES `tbl_estado` WRITE;
+/*!40000 ALTER TABLE `tbl_estado` DISABLE KEYS */;
+INSERT INTO `tbl_estado` VALUES (1,'AC','Acre'),(2,'AL','Alagoas'),(3,'AP','Amapá'),(4,'AM','Amazonas'),(5,'BA','Bahia'),(6,'CE','Ceará'),(7,'DF','Distrito Federal'),(8,'ES','Espírito Santo'),(9,'GO','Goiás'),(10,'MA','Maranhão'),(11,'MT','Mato Grosso'),(12,'MS','Mato Grosso do Sul'),(13,'MG','Minas Gerais'),(14,'PA','Pará'),(15,'PB','Paraíba'),(16,'PR','Paraná'),(17,'PE','Pernambuco'),(18,'PI','Piauí'),(19,'RJ','Rio de Janeiro'),(20,'RN','Rio Grande do Norte'),(21,'RS','Rio Grande do Sul'),(22,'RO','Rondônia'),(23,'RR','Roraima'),(24,'SC','Santa Catarina'),(25,'SP','São Paulo'),(26,'SE','Sergipe'),(27,'TO','Tocantins');
+/*!40000 ALTER TABLE `tbl_estado` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_importancia`
+--
+
+DROP TABLE IF EXISTS `tbl_importancia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_importancia` (
+  `idImportancia` int(11) NOT NULL AUTO_INCREMENT,
+  `caminhoImgPrincipal` varchar(50) DEFAULT NULL,
+  `tlt1` varchar(255) DEFAULT NULL,
+  `txt1` varchar(800) DEFAULT NULL,
+  `tlt2` varchar(255) DEFAULT NULL,
+  `txt2` varchar(800) DEFAULT NULL,
+  `tlt3` varchar(255) DEFAULT NULL,
+  `txt3` varchar(800) DEFAULT NULL,
+  PRIMARY KEY (`idImportancia`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_importancia`
+--
+
+LOCK TABLES `tbl_importancia` WRITE;
+/*!40000 ALTER TABLE `tbl_importancia` DISABLE KEYS */;
+INSERT INTO `tbl_importancia` VALUES (1,'arquivos/1675d3ca30d27aaf57c025d42af7784c.png','O melhor para seu organismo 123','O suco é uma ótima opção para aquelas pessoas que querem uma forma de alimentação bem nutritiva, refrescante e fácil de preparar. Os sucos oferecem uma enorme quantidade de vitaminas e sais minerais que o organismo necessita, contribuindo para o bom estado do mesmo. Especialistas recomendam tomar pelo menos um copo de suco por dia.',' Importante para seu matabolismo ',' Vale ressaltar que os sucos contêm água, um importantíssimo elemento que atua em todos os processos metabólicos do organismo. A água controla a temperatura corporal, transporta as fibras que estimulam o trabalho do intestino, além de retirar as toxinas do corpo. É a solução onde os processos celulares ocorrem. Desta forma, a importância dos sucos na saúde é ainda mais evidenciada.',' Fonte de vitaminas',' Os sucos de frutas representam uma grande fonte de vitaminas, especialmente a vitamina C, presente nas frutas cítricas. Os sucos de hortaliças fazem com que o corpo absorva os nutrientes rapidamente, ao contrário do que ocorreria se essas hortaliças fossem ingeridas normalmente, onde esse processo é mais lento. ');
+/*!40000 ALTER TABLE `tbl_importancia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_localidade`
+--
+
+DROP TABLE IF EXISTS `tbl_localidade`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_localidade` (
+  `idLocalidade` int(11) NOT NULL AUTO_INCREMENT,
+  `logradouro` varchar(50) NOT NULL,
+  `telefone` varchar(14) NOT NULL,
+  `caminhoImagem` varchar(50) DEFAULT NULL,
+  `aparecer` tinyint(1) NOT NULL,
+  `idCidade` int(11) NOT NULL,
+  `idEstado` int(11) NOT NULL,
+  PRIMARY KEY (`idLocalidade`),
+  KEY `fk_localidadeCidade` (`idCidade`),
+  KEY `fk_localidadeEstado` (`idEstado`),
+  CONSTRAINT `fk_localidadeCidade` FOREIGN KEY (`idCidade`) REFERENCES `tbl_cidade` (`idCidade`),
+  CONSTRAINT `fk_localidadeEstado` FOREIGN KEY (`idEstado`) REFERENCES `tbl_estado` (`idEstado`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_localidade`
+--
+
+LOCK TABLES `tbl_localidade` WRITE;
+/*!40000 ALTER TABLE `tbl_localidade` DISABLE KEYS */;
+INSERT INTO `tbl_localidade` VALUES (15,'Avenida Paulista','(11) 1111-1111','arquivos/35e9bee79b773c9023fe5f1df96624f0.jpg',1,2,2);
+/*!40000 ALTER TABLE `tbl_localidade` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_nivel`
+--
+
+DROP TABLE IF EXISTS `tbl_nivel`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_nivel` (
+  `idNivel` int(11) NOT NULL AUTO_INCREMENT,
+  `nivel` varchar(50) NOT NULL,
+  PRIMARY KEY (`idNivel`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_nivel`
+--
+
+LOCK TABLES `tbl_nivel` WRITE;
+/*!40000 ALTER TABLE `tbl_nivel` DISABLE KEYS */;
+INSERT INTO `tbl_nivel` VALUES (1,'Administrador do Sistema'),(3,'Operador básico'),(6,'Cataloguista');
+/*!40000 ALTER TABLE `tbl_nivel` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_produto`
+--
+
+DROP TABLE IF EXISTS `tbl_produto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_produto` (
+  `idProduto` int(11) NOT NULL AUTO_INCREMENT,
+  `destaque` tinyint(4) NOT NULL,
+  `caminhoImagem` varchar(50) DEFAULT NULL,
+  `nome` varchar(50) NOT NULL,
+  `descricao` varchar(255) NOT NULL,
+  `preco` double(5,2) NOT NULL,
+  `home` tinyint(1) NOT NULL,
+  PRIMARY KEY (`idProduto`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_produto`
+--
+
+LOCK TABLES `tbl_produto` WRITE;
+/*!40000 ALTER TABLE `tbl_produto` DISABLE KEYS */;
+INSERT INTO `tbl_produto` VALUES (1,1,'arquivos/sucoNatural.png','suquinho','muito gostoso',2.00,1),(2,0,'arquivos/suco1.jpg','suco','extremamente gelado, o melhor para os dias de calor',12.00,1),(4,1,'arquivos/detox2.jpg','teste','apenas um teste',23.00,0),(5,0,'arquivos/sus.jpg','mais','testando',15.00,0);
+/*!40000 ALTER TABLE `tbl_produto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_produto_tamanho`
+--
+
+DROP TABLE IF EXISTS `tbl_produto_tamanho`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_produto_tamanho` (
+  `idProdutoTamanho` int(11) NOT NULL AUTO_INCREMENT,
+  `idProduto` int(11) NOT NULL,
+  `idTamanho` int(11) NOT NULL,
+  PRIMARY KEY (`idProdutoTamanho`),
+  KEY `fk_pt_produto` (`idProduto`),
+  KEY `fk_pt_tamanho` (`idTamanho`),
+  CONSTRAINT `fk_pt_produto` FOREIGN KEY (`idProduto`) REFERENCES `tbl_produto` (`idProduto`),
+  CONSTRAINT `fk_pt_tamanho` FOREIGN KEY (`idTamanho`) REFERENCES `tbl_tamanho` (`idTamanho`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_produto_tamanho`
+--
+
+LOCK TABLES `tbl_produto_tamanho` WRITE;
+/*!40000 ALTER TABLE `tbl_produto_tamanho` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_produto_tamanho` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_promocao`
+--
+
+DROP TABLE IF EXISTS `tbl_promocao`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_promocao` (
+  `idPromocao` int(11) NOT NULL AUTO_INCREMENT,
+  `precoPromo` double(5,2) DEFAULT NULL,
+  `idProduto` int(11) NOT NULL,
+  PRIMARY KEY (`idPromocao`),
+  KEY `fk_promocaoIdProduto` (`idProduto`),
+  CONSTRAINT `fk_promocaoIdProduto` FOREIGN KEY (`idProduto`) REFERENCES `tbl_produto` (`idProduto`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_promocao`
+--
+
+LOCK TABLES `tbl_promocao` WRITE;
+/*!40000 ALTER TABLE `tbl_promocao` DISABLE KEYS */;
+INSERT INTO `tbl_promocao` VALUES (10,20.00,4);
+/*!40000 ALTER TABLE `tbl_promocao` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_tamanho`
+--
+
+DROP TABLE IF EXISTS `tbl_tamanho`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_tamanho` (
+  `idTamanho` int(11) NOT NULL AUTO_INCREMENT,
+  `tamanho` varchar(10) NOT NULL,
+  PRIMARY KEY (`idTamanho`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_tamanho`
+--
+
+LOCK TABLES `tbl_tamanho` WRITE;
+/*!40000 ALTER TABLE `tbl_tamanho` DISABLE KEYS */;
+INSERT INTO `tbl_tamanho` VALUES (1,'Grande'),(2,'Médio'),(3,'Pequeno');
+/*!40000 ALTER TABLE `tbl_tamanho` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_usuario`
+--
+
+DROP TABLE IF EXISTS `tbl_usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_usuario` (
+  `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(30) NOT NULL,
+  `login` varchar(20) NOT NULL,
+  `senha` varchar(100) NOT NULL,
+  `idNivel` int(11) NOT NULL,
+  PRIMARY KEY (`idUsuario`),
+  KEY `fk_nivel` (`idNivel`),
+  CONSTRAINT `fk_nivel` FOREIGN KEY (`idNivel`) REFERENCES `tbl_nivel` (`idNivel`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_usuario`
+--
+
+LOCK TABLES `tbl_usuario` WRITE;
+/*!40000 ALTER TABLE `tbl_usuario` DISABLE KEYS */;
+INSERT INTO `tbl_usuario` VALUES (11,'administrador','adm','202cb962ac59075b964b07152d234b70',1),(13,'comum','user','6ad14ba9986e3615423dfca256d04e3f',3);
+/*!40000 ALTER TABLE `tbl_usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_verao`
+--
+
+DROP TABLE IF EXISTS `tbl_verao`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_verao` (
+  `idVerao` int(11) NOT NULL AUTO_INCREMENT,
+  `caminhoImg1` varchar(50) DEFAULT NULL,
+  `caminhoImg2` varchar(50) DEFAULT NULL,
+  `txt1` varchar(600) DEFAULT NULL,
+  `txt2` varchar(600) DEFAULT NULL,
+  PRIMARY KEY (`idVerao`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_verao`
+--
+
+LOCK TABLES `tbl_verao` WRITE;
+/*!40000 ALTER TABLE `tbl_verao` DISABLE KEYS */;
+INSERT INTO `tbl_verao` VALUES (1,'arquivos/9a4891ecb0346f1d2e8cc145f07c1dce.jpg','arquivos/9b8fd28cbc10d502de55375cf6048ca7.jpg','O verão do hemisfério norte é chamado de “verão boreal”, e o do hemisfério sul é chamado de “verão austral”. Alguns povos antigos dividiam o ano em cinco estações: outono, inverno, primavera, o verão propriamente dito, de tempo quente e chuvoso e o estio, de tempo quente e seco – palavra que originou o termo “estiagem”. O solstício ocorre duas vezes ao ano. No de inverno, a noite é mais longa que o dia. No de verão, o dia é mais longo que a noite.','A época do ano com maior incidência de enchentes no Centro-Sul do Brasil é o verão, principalmente entre os meses de dezembro a abril. O maior desastre natural da história do país ocorreu justamente nessa estação, com enchentes e deslizamentos de terra. Ocorrido na Serra Fluminense – diga-se Petrópolis, Teresópolis, Nova Friburgo, São José do Vale do Rio Preto e Bom Jardim -, ele matou em torno de 1 000 pessoas. ');
+/*!40000 ALTER TABLE `tbl_verao` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tblcontato`
+--
+
+DROP TABLE IF EXISTS `tblcontato`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tblcontato` (
+  `idcontato` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `telefone` varchar(18) DEFAULT NULL,
+  `celular` varchar(18) DEFAULT NULL,
+  `homepage` varchar(255) DEFAULT NULL,
+  `linkfacebook` varchar(255) DEFAULT NULL,
+  `sexo` varchar(1) NOT NULL,
+  `profissao` varchar(50) NOT NULL,
+  `sugestoes` varchar(300) DEFAULT NULL,
+  `infoprodutos` varchar(300) DEFAULT NULL,
+  PRIMARY KEY (`idcontato`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tblcontato`
+--
+
+LOCK TABLES `tblcontato` WRITE;
+/*!40000 ALTER TABLE `tblcontato` DISABLE KEYS */;
+INSERT INTO `tblcontato` VALUES (5,'teste','asdasdasdasdasdasd','','(12) 32132-1321','','','F','123213213','123213213','213213');
+/*!40000 ALTER TABLE `tblcontato` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-11-06 15:10:54

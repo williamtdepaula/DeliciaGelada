@@ -1,0 +1,3 @@
+<a href="cmsUsuario.php?modo=apagarUser&codigo=<?php echo($rsItensUsuarios['idUsuario']);?> " onload="Modal();">
+                                <img src="Imagens/iconDel24.png" alt="">
+                            </a>

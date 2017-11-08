@@ -1,0 +1,786 @@
+/*CSS*/
+
+@font-face{
+    font-family:opensansnormal;
+    src:url("../../Fontes/Open Sans/OpenSans-Light.ttf");
+}
+
+@font-face{
+    font-family:opensansbold;
+    src:url("../../Fontes/Open Sans/OpenSans-Bold.ttf"); 
+}
+
+
+/*PÁGINA CONTATO*/
+#areaTotal{
+    width: 900px;
+    min-height: 800px;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #e0e0e0;
+}
+
+header{
+    width:900px;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #2eb9e8;
+}
+
+#linhaCima{
+    width: 900px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#txtTltCMS{
+    width: 600px;
+    height: 100px;
+    float: left;
+    border-radius: 20px 0px 0px 0px;
+    font-family: "opensansnormal";
+    color: #e8e8e8;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#imgTltCMS{
+    width: 160px;
+    height: 120px;
+    float: left;
+    border-radius: 0px 20px 0px 0px;
+    padding-left: 140px;
+    padding-top: 30px;
+}
+
+nav{
+    width:700px;
+    height: 150px;
+    float: left;
+}
+
+.blocoItensMenuCMS{
+    width:170px;
+    height: 130px;
+    float: left;
+    margin-left: 5px;
+    border-radius: 10px 10px 10px 10px;
+    transition: 1s;
+}
+
+.blocoItensMenuCMS:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imgItemMenuCMS{
+    width: 120px;
+    height: 90px;
+    background-color: #e8e8e8;
+    padding-left: 50px;
+    padding-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.imgItemMenuCMS img{
+    width: 68px;
+    height: 68px;
+}
+
+.txtItemMenuCMS{
+    width: 170px;
+    height: 30px;
+    background-color: #d8d8d8;
+    border-radius: 0px 0px 10px 10px;
+    font-family: "opensansbold";
+    color: #777777;
+    text-align: center;
+}
+
+span{
+    font-family:"opensansbold";
+}
+
+#nomeUsuario{
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+
+#nomeUsuarioLogado{
+    width:200px;
+    height:80px;
+    font-family: "opensansnormal";
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#logoutUsuario{
+    width:60px;
+    height: 40px;
+    padding-left: 140px;
+    font-family: "opensansnormal";
+}
+
+/*AREA CONTATO*/
+
+#linhaItensContato{
+    width:830px;
+    height: 40px;
+    background-color: #2eb9e8;
+    margin: auto;
+    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.itensContato{
+    width:130px;
+    height: 30px;
+    float: left;
+    margin-left: 8px;
+    font-family: "opensansbold";
+    text-align: center;
+    padding-top: 10px;
+}
+
+.linhaConteudoItensContato{
+    width:830px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.conteudoItensContato{
+    width:129px;
+    height: 40px;
+    border: 1px solid #000;
+    float: left;
+    margin-left: 7px;
+    overflow: auto;
+    font-family: "opensansnormal";
+    text-align: center;
+    font-size: 14px;
+}
+
+.linhaItensContato{
+    width:800px;
+    height:50px;
+    margin-bottom: 10px;
+}
+
+.txtNomeEmailContato{
+    width:800px;
+    height: 25px;
+    font-family: "opensansnormal";
+    font-size: 16px;
+}
+
+.boxNomeEmailContato{
+    width:800px;
+    height: 25px;
+}
+
+.txtNameEmailContatoEdit{
+    width:700px;
+}
+
+.txtOutrasBox{
+    width:400px;
+    height:25px;
+    float: left;
+    font-family: "opensansnormal";
+}
+
+.boxOutrasCaixasDeTexto{
+    width:400px;
+    min-height: 25px;
+    float: left;
+}
+
+.txtOutrasCaixasEdit{
+    width:300px;
+}
+
+.ladoEsquerdoContato{
+    width:400px;
+    min-height:50px;
+    float: left;
+}
+
+.ladoDireitoContato{
+    width:400px;
+    min-height:50px;
+    float: left;
+}
+
+#txtSexo{
+    width:400px;
+    height:25px;
+    font-family: "opensansnormal";
+}
+
+.boxOpcSexo{
+    width:100px;
+    height: 25px;
+    float: left;
+}
+
+.txtArea{
+    width:300px;
+    height:150px;
+    resize: none;
+}
+
+#areaProdutosDestaque{
+    width:1200px;
+    min-height:300px;
+    overflow: hidden;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+/*AREA MAIN*/
+
+main{
+    width: 900px;
+    min-height: 500px;
+    padding-top: 20px;
+}
+
+#mainNovoLocal{
+    width: 900px;
+    min-height: 650px;
+}
+
+#boxLinhaItens{
+    width:650px;
+    height: 150px;
+    margin: auto;
+}
+
+.boxPages{
+    width:190px;
+    height: 150px;
+    float: left;
+    margin-left: 20px;
+}
+
+.imgPages{
+    width:130px;
+    height: 80px;
+    padding-left: 60px;
+    padding-top: 20px;
+    transition: 1s;
+}
+
+.imgPages:hover{
+    -webkit-transform: rotateZ(-20deg);
+    -ms-transform: rotateZ(-20deg);
+    transform: rotateZ(-20deg);
+    transition: 1s;
+}
+
+.imgPages img{
+    width: 64px;
+    height: 64px;
+}
+
+.txtImgPages{
+    width: 190px;
+    height: 50px;
+    font-family: "opensansbold";
+    text-align: center;
+}
+
+/*ÁREA USUÁRIOS*/
+
+#tlt{
+    width:300px;
+    height: 20px;
+    margin: auto;
+    border-bottom: 2px solid #2eb9e8;
+    font-family: "opensansbold";
+    text-align: center;
+    font-size: 18px;
+}
+
+#linhaOpcsUser{
+    width:375px;
+    height: 90px;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 25px;
+}
+
+#opcUsuarioCad{
+    width:400px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "opensansbold";
+    color: #28a2d6;
+}
+
+.itemOpc{
+    width:100px;
+    height: 90px;
+    float: left;
+    margin-left: 50px;
+    transition: 1s;
+}
+
+.itemOpc:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imgOpcUser{
+    width:80px;
+    height: 70px;
+    padding-left: 20px;
+}
+
+.txtOpcUser{
+    width:100px;
+    height: 20px;
+    font-family: "opensansbold";
+    text-align: center;
+    font-size: 16px;
+}
+
+.imgOpcUser img{
+    width:64px;
+    height: 64px;
+}
+
+.tltItemUsuario{
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "opensansnormal";
+}
+
+.boxItensNivel{
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.txtNomeUsuario{
+    width: 200px;
+    height: 20px;
+}
+
+.btnSalvarDados{
+    width:200px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#linhaItensNivel{
+    width:200px;
+    height: 30px;
+    
+}
+
+#linhaNivelTotal{
+    width:300px;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10PX; 
+}
+
+#tltItensNivel{
+    width: 300px;
+    height: 30px;
+    background-color: #2eb9e8;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tltNivel{
+    width: 150px;
+    height: 25px;
+    float: left;
+    text-align: center;
+    font-family: "opensansbold";
+    padding-top: 5px;
+}
+
+.linhaItensRepetir{
+    margin-top: 5px;
+    width:300px;
+    height: 30px;
+}
+
+.itensLinhaRepitir{
+    width: 140px;
+    height: 29px;
+    float: left;
+    margin-left: 5px;
+    border: 1px solid #000;
+    text-align: center;
+    font-family: "opensansnormal";
+    overflow: auto;
+}
+/*ÁREA MODAL*/
+.modal{
+	width:700px;
+	height:500px;
+	background-color:#ffffff;
+	margin:auto;
+	margin-top:250px;
+}
+
+
+.modalContainer{
+	width:100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.7);
+	position:fixed;
+	display:none;
+}
+
+#btnFechar{
+    width:19px;
+    height: 19px;
+    background-color: #000;
+    margin-left: 681px;
+    text-align: center;
+    color: #fff;
+    font-family: "opensansbold";
+}
+
+#tltItensUsuarios{
+    width:600px;
+    height: 30px;
+    background-color: #049ad6;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.itensTLTUsuario{
+    width:140px;
+    height: 30px;
+    float: left;
+    margin-left: 8px;
+    text-align: center;
+    font-family: "opensansbold";
+    margin-top: 5px;
+}
+
+.linhaItensUsuario{
+    width:605px;
+    height: 35px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itensUsuario{
+    width:141px;
+    height: 28px;
+    float: left;
+    margin-left: 8px;
+    text-align: center;
+    font-family: "opensansnormal";
+    margin-top: 5px;
+    border: 1px solid #000;
+    font-size: 14px;
+    overflow: auto;
+    padding-top: 5px;
+}
+
+#tltCmsUsuario{
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    font-family: "opensansbold";
+    border-bottom: 3px solid #049ad6;
+}
+
+/*AREA CMSHOME*/
+
+
+
+/* AREA CMSDESTAQUE */
+
+#areaTltsDestaque{
+    width:415px;
+    height: 30px;
+    background-color: #2eb9e8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tltDestaque{
+    width:100px;
+    height: 30px;
+    float: left;
+    margin-left: 2px;
+    font-family: "opensansbold";
+    text-align: center;
+    font-size: 16px;
+}
+
+.linhaDestaqueRepetir{
+    width:420px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.itensProdutoDestaque{
+    width:100px;
+    height: 50px;
+    float: left;
+    margin-left: 2px;
+    font-family: "opensansnormal";
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #000;
+    overflow: auto;
+    padding-top: 3px;
+    margin-top: 10px;
+}
+
+#areaBtn{
+    width: 50px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+/*AREA CMS PROMO */
+
+#areaImgPromo{
+    width:350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#areaImgPromo img{
+    width:350px;
+    height: 200px;
+}
+
+#tituloPromo{
+    width:350px;
+    height: 30px;
+    margin: auto;
+    font-family: "opensansbold";
+}
+
+#precoOriginal{
+    width: 350px;
+    height: 30px;
+    margin: auto;
+    font-family: "opensansnormal";
+    margin-top: 30px;
+}
+
+#txtPromo{
+    width: 30px;
+}
+
+#btnSavePromo{
+    height: 20px;
+    
+}
+
+/*cmsVerao*/
+#boxOpcs{
+    width: 200px;
+    height: 25px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#imgVeraoCMS{
+    width: 400px;
+    height: 200px;
+    background-color: firebrick;
+    margin: auto;
+}
+
+#imgVeraoCMS img{
+    width: 400px;
+    height: 200px;
+}
+
+.txt{
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
+
+#txtAreaVerao{
+    width: 500px;
+    height: 200px;
+}
+
+.txtImport{
+    width: 300px;
+    height: 100px; 
+    margin: auto;
+}
+
+#txtAreaImport{
+    width: 300px;
+    height: 100px; 
+}
+
+#btnSalvarImgVerao{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 10px;
+}
+
+#btnSalvarVerao{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 10px;
+    margin-top: 20px;
+}
+
+.txtTlt{
+    width: 200px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.txtTltPerson{
+    width: 200px;
+}
+
+/*AREA CMS LOCAL*/
+#areaTltsLocal{
+    width:340px;
+    height: 30px;
+    background-color: #2eb9e8;;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.linhaLocalRepetir{
+    width:330px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#imgModalLocal{
+    width: 300px;
+    height: 150px;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#btnSubmitNewLocal{
+    width: 200px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#btnSubmitNewImport{
+    width: 200px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tltPerguntaLocal{
+    width: 200px;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "opensansnormal";
+}
+
+#roubaespca{
+    height: 20px;
+}
+
+.txtPerguntaLocal{
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+#txtPerso{
+    color: #2eb9e8;
+}
+
+/*Local*/
+
+
+#tltLocal{
+    width: 300px;
+    height: 30px;
+    background-color: green;
+}
+
+/*AREA FOOTER*/
+
+footer{
+    width:900px;
+    height: 40px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #2eb9e8;
+    font-family: "opensansnormal";
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    float: left;
+}
+
+
+/*ITENS EM GERAL*/
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+

@@ -1,0 +1,935 @@
+@font-face{
+    font-family:opensansbold;
+    src:url("../Fontes/Open Sans/OpenSans-Bold.ttf");
+    
+}
+
+@font-face{
+    font-family:opensansnormal;
+    src:url("../Fontes/Open Sans/OpenSans-Light.ttf");
+}
+
+/*PÁGINA HOME*/
+body{
+    margin: auto;
+}
+
+#roubaEspaco{
+    height:60px;
+}
+
+header{
+    width: 100%;
+    height:60px;
+    position: fixed;
+    background: red; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(left, #d68a19 , #d69b26); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(right, #d68a19 , #d69b26); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(right, #d68a19 , #d69b26); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to right, #d68a19 , #d69b26); /* Standard syntax */
+    z-index: 3;
+}
+
+#itensHeader{
+    width: 1400px;
+    height: 60px;
+    margin: auto;
+}
+
+#logoJuice{
+    width:50px;
+    height:50px;
+}
+
+#boxLogo{
+    width:120px;
+    height:60px;
+    float:left;
+    padding-left: 80px;
+}
+
+#itensMenu{
+    width:800px;
+    height:60px;
+    float:left;
+}
+
+#login{
+    width:400px;
+    height:60px;
+    float: left;
+}
+
+.txtMenu{
+    width:113px;
+    height:40px;
+    float: left;
+    margin-left: 1px;
+    text-align: center;
+    font-family: "opensansnormal";
+    font-size: 14px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#linhaTxt{
+    width:400px;
+    height:20px;
+    padding-top: 10px;
+}
+
+#linhaTxtBox_btn{
+    width:400px;
+    height:30px;
+}
+
+.txtsBoxLogin{
+    width:160px;
+    height:40px;
+    float: left;
+}
+
+#btnLogin{
+    width:80px;
+    height:40px;
+    float: left;
+}
+
+.txtNomeLogin{
+    width:160px;
+    height:20px;
+    float: left;
+    font-family: "opensansbold";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*AREA CONTEÚDO*/
+#main{
+    width:1200px;
+    min-height:600px;
+    background-color: #eaeced;
+    margin: auto;
+}
+
+#conteudo{
+    width:1200px;
+    min-height:600px;
+    background-color: #eaeced;
+    margin: auto;
+}
+
+#areaProdutos_Menu{
+    width:1200px;
+    min-height: 600px;
+    overflow: hidden;
+    margin: auto;
+}
+
+#menuItens{
+    width:180px;
+    min-height: 600px;
+    float: left;
+}
+
+#areaProdutos{
+    width:1020px;
+    min-height: 600px;
+    float: left;
+}
+
+#menuItens_ladoProdutos{
+    width:180px;
+    min-height: 62px;
+}
+
+.itens_ladoProdutos{
+    width:180px;
+    min-height: 30px;
+    background-color: #f4be41; 
+    margin-bottom: 2px;
+    font-family: "arial";
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#redesSocias{
+    width: 80px;
+    height: 230px;
+    position: fixed;
+    margin-left:1200px;
+    margin-top: -150px;
+}
+
+#redesSociasOutrasPags{
+    width: 80px;
+    height: 230px;
+    position: fixed;
+    margin-left:1200px;
+    margin-top: 10px;
+}
+
+.boxRedesSociais{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2px;
+}
+
+
+#tituloProdutos{
+    width:1000px;
+    height:20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-family: "Arial";
+    font-size: 10px;
+    font-weight: 600;
+    border-bottom: solid 2px #d69813;
+    color: #6a6a6b;
+    text-align: center;
+}
+
+.linhaProdutos{
+    width:1020px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boxProduto{
+    width:320px;
+    height:300px;
+    margin-left: 10px;
+    float: left;
+}
+
+.imgProduto{
+    width:320px;
+    height:180px;
+    background-color: brown;
+}
+
+.imgProduto img{
+    width:320px;
+    height:180px;
+}
+
+.txtProdutos{
+    width:320px;
+    height:115px;
+    background-color: #f4be41;
+    padding-top: 5px;
+}
+
+.textosProdutos{
+    width:318px;
+    height:25px;
+    margin-bottom:4px;
+    font-family: "opensansbold";
+    padding-left: 2px;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+span{
+    font-family: "opensansnormal";
+}
+
+.textosProdutos_detail{
+    width:60px;
+    height:25px;
+    margin-bottom:4px;
+    font-family: "Arial";
+    padding-left: 2px;
+    line-height: 20px;
+    font-size: 14px;
+    padding-left: 260px;
+}
+
+.itemTxtBoxLogin{
+    width: 130px;
+}
+
+#itemBtnBoxLogin{
+    width: 50px;
+}
+
+footer{
+    width:100%;
+    height:350px;
+    background-color: #167226;
+}
+
+#boxFooter{
+    width:1400px;
+    height: 340px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#tituloBoxFooter{
+    width:600px;
+    height:40px;
+    text-align: center;
+    font-family: "arial";
+    font-size: 16px;
+    color:#fafafa;
+    border-bottom: solid 1px #d69813;
+    margin: auto;
+}
+
+#subTitulo{
+    width:600px;
+    height:40px;
+    text-align: center;
+    font-family: "arial";
+    font-size: 16px;
+    color:#fafafa;
+    margin: auto;
+    line-height: 50px;
+}
+
+#mapaLinks{
+    width: 1000px;
+    height: 200px;
+    color:#b0b3b7;
+    margin: auto;
+}
+
+#boxTltMapaLink{
+    width:1000px;
+    height:50px;
+}
+
+.tltMapLink{
+    width:332px;
+    height: 50px;
+    float: left;
+    margin-left: 1px;
+    text-align: center;
+    color: #d2d5d8;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#boxLinks{
+    width:1000px;
+    height: 150px;
+}
+
+.boxItensLinks{
+    width:292px;
+    height: 150px;
+    float: left;
+    font-family: "Arial";
+    font-size: 14px;
+    padding-left: 100px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+/*FIM DA PÁGINA HOME*/
+
+
+
+/*PÁGINA DESTAQUE*/
+#mainOutrasPags{
+    width:1200px;
+    min-height:540px;
+    background-color: #f2f2f2;
+    margin: auto;
+}
+
+#areaProdutosDestaque{
+    width:1200px;
+    min-height:300px;
+    overflow: hidden;
+}
+
+#sctAreaProdutosDesc{
+    width:1200px;
+    min-height: 250px;
+    float: left;
+}
+
+#tituloProdutosOutrasPags{
+    width:1200px;
+    height:20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: solid 2px #d69813;
+    color: #4f4e4c;
+    text-align: center;
+}
+
+.sctDestaque{
+    width:1200px;
+    min-height: 330px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    background-color: #fce749;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.boxContemImg{
+    width:350px;
+    height:200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tltSobreImg{
+    width:340px;
+    height:37px;
+    position: absolute;
+    margin-top: 160px; 
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff9f9;
+    padding-left: 10px;
+    padding-top: 3px;
+    z-index: 2;
+}
+
+.atrasTltSobreImg{
+    width:350px;
+    height:40px;
+    position: absolute;
+    margin-top: 160px;
+    background-color: rgb(4, 79, 14);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.boxImgDestaque{
+    width:350px;
+    height:200px;
+    margin-top: 10px;
+}
+
+.boxImgDestaque img{
+    width:350px;
+    height:200px;
+}
+
+.boxTxtImgDestaque{
+    width:440px;
+    min-height:30px;
+    margin: auto;
+    color: #848480;
+    font-family: "arial";
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.areaBtnComprar{
+    width: 200px;
+    height: 27px;
+    background-color: #2bbc46;
+    margin: auto;
+    font-family: "opensansnormal";
+    color: #d9dbd9;
+    padding-top: 3px;
+    text-align: center;
+    transition: 1s;
+}
+
+.areaBtnComprar:hover{
+    font-family: "opensansbold";
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+}
+/*FIM DA PÁGINA DESTAQUE*/
+
+/*PÁGINA PROMOÇÃO*/
+.boxPromocao{
+    width: 1200px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boxImg{
+    width:220px;
+    height:300px;
+    background-color: #f49542;
+    float: left;
+    margin-left: 140px;
+    border-bottom: solid 3px #167226;
+    margin-bottom: 10px;
+}
+
+.imagemPromo{
+    width:230px;
+    height: 150px;
+    
+}
+
+.boxPromocao img{
+    width: 220px;
+    height: 150px; 
+}
+
+.TituloPromoSobreImg{
+    width: 220px;
+    height: 40px;
+    margin-top: -40px;
+    font-family: "opensansbold";
+    padding-left: 5px;
+    color: #fff;
+    position: absolute;
+    background-color: rgb(4, 79, 14);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.boxPrecos{
+    width: 220px;
+    height: 80px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.preco{
+    width: 215px;
+    height: 45px;
+    margin-top: 5px;
+    font-family: "opensansbold";
+    padding-left: 5px;
+}
+
+
+
+/*FIM DA PÁGINA PROMOÇÃO*/
+
+/*PÁGINA VERÃO*/
+
+.linhaIMGeTexto_Promocao{
+    width:1200px;
+    min-height:420px;
+}
+
+.imgModaVerao{
+    width:800px;
+    height: 300px;
+    background-color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:0px 0px 15px black;
+}
+
+.imgModaVerao img{
+    width:800px;
+    height: 300px;
+}
+
+.textoCuriosidade{
+    width:1200px;
+    min-height: 10px;
+    background-color: #f96d6d;
+    font-family: "opensansnormal";
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-align: justify;
+    text-transform:uppercase; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*FIM DA PÁGINA VERÃO*/
+
+/*PÁGINA IMPORTANCIA*/
+#imgPrincipalImportancia{
+    width:400px;
+    height:200px;
+    background-color: green;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+#imgPrincipalImportancia img{
+    width: 400px;
+    height: 200px;
+}
+
+.boxTxtImport{
+    width:1200px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boxItemTxt{
+    width:350px;
+    min-height:300px;
+    float: left;
+    margin-left: 35px;
+}
+
+.tltItemTxt{
+    width:350px;
+    min-height:50px;
+    font-family: "opensansbold";
+    color: #474745;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.textoItemTxt{
+    width: 350px;
+    min-height: 250px;
+    font-family: "opensansnormal";
+    font-size: 16px;
+    text-align: justify;
+}
+/*FIM DA PÁGINA IMPORTANCIA*/
+
+/*PÁGINA LOCALIDADE*/
+.boxLugares{
+    width:1100px;
+    height:300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+}
+
+.boxDetails{
+    width:400px;
+    height:300px;
+    float: left;
+}
+
+.boxImgDetails{
+    width:600px;
+    height:300px;
+    float: left;
+}
+
+.boxImgDetails img{
+    width:600px;
+    height:300px;
+}
+
+
+.lineLocal{
+    width:500px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.boxImgLocal{
+    width:50px;
+    height:50px;
+    float: left;
+    padding-left: 10px;
+}
+
+.boxImgLocal img{
+    width:50px;
+    height:50px;
+}
+
+.boxTextoLocal{
+    width:300px;
+    height:50px;
+    font-family: "opensansnormal";
+    font-size: 16px;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    
+}
+/*FIM DA PÁGINA LOCALIDADE*/
+
+/*PÁGINA CONTATO*/
+#boxContato{
+    width:800px;
+    height:500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.linhaItensContato{
+    width:800px;
+    height:50px;
+    margin-bottom: 10px;
+}
+
+.txtNomeEmailContato{
+    width:800px;
+    height: 25px;
+    font-family: "opensansnormal";
+    font-size: 16px;
+}
+
+.boxNomeEmailContato{
+    width:800px;
+    height: 25px;
+}
+
+.txtNameEmailContatoEdit{
+    width:700px;
+}
+
+.txtOutrasBox{
+    width:400px;
+    height:25px;
+    float: left;
+    font-family: "opensansnormal";
+}
+
+.boxOutrasCaixasDeTexto{
+    width:400px;
+    min-height: 25px;
+    float: left;
+}
+
+.txtOutrasCaixasEdit{
+    width:300px;
+}
+
+.ladoEsquerdoContato{
+    width:400px;
+    min-height:50px;
+    float: left;
+}
+
+.ladoDireitoContato{
+    width:400px;
+    min-height:50px;
+    float: left;
+}
+
+#txtSexo{
+    width:400px;
+    height:25px;
+    font-family: "opensansnormal";
+}
+
+.boxOpcSexo{
+    width:100px;
+    height: 25px;
+    float: left;
+}
+
+.txtArea{
+    width:300px;
+    height:150px;
+    resize: none;
+}
+/*FIM DA PÁGINA CONTATO*/
+
+
+/*AREA DO SLIDE*/
+.nivoSlider {
+	position:relative;
+	width:1200px;
+	height:auto;
+	overflow: hidden;
+    margin: auto;
+    z-index: 1;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 1200px;
+    height: 300px;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 1200px !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:1200px;
+	height:300px;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	top: 40%;
+	left:0px;
+	bottom:0px;
+	text-align: center;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	overflow: hidden;
+	display: none;
+}
+
+.nivo-caption h1{
+    font-family: "opensansbold";
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-transform: uppercase;
+}
+.nivo-caption p {
+    font-family: "opensansnormal";
+	padding:5px;
+	margin:0;
+    font-size: 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*==========================*/
+
+.theme-mi-slider .nivoSlider{
+	position:relative;
+}
+
+.theme-mi-slider .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+/* Nivo Pagination =========================*/
+
+.nivo-controlNav{
+	display: flex;
+	justify-content: center;
+}
+
+.theme-mi-slider .nivo-control{
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: #545454;
+	margin: 3px;
+	text-indent: -9999px
+}
+
+.theme-mi-slider .nivo-control:hover{
+	background: #1B1B1B;
+}
+
+.theme-mi-slider .active{
+	background: #1B1B1B;
+}
+
+/* Nivo direction ============*/
+.nivo-directionNav a{
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.nivo-directionNav .nivo-prevNav{
+	background-image: url(../img/icons/circle-left.png);
+	background-size: cover;
+	text-indent: -9999px;
+	left: 6px;
+}
+
+.nivo-directionNav .nivo-nextNav{
+	background-image: url(../img/icons/circle-right.png);
+	background-size: cover;
+	text-indent: -9999px;
+	right: 6px;
+}
+
+
+/*Nivo Caption*/
+
+.nivo-html-caption{
+	position: absolute;
+}
